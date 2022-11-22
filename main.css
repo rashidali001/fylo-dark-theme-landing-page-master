@@ -5,4 +5,382 @@
 }
 body{
     background-color: hsl(218, 28%, 13%);
+    font-family: 'Raleway', sans-serif;
 }
+
+/**Section one **/
+#main_img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#main_img > img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+/** section two **/
+div.padding{
+    padding: 8% 5%;
+}
+
+div.section{
+    background-image: url('./images/bg-curvy-mobile.svg');
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+
+}
+div.section > h1{
+    
+    font-size: 25px;
+}
+div.section > p{
+    margin: 30px 0;
+    color: rgba(255, 255, 255,0.9);
+    font-size: 17px;
+}
+div.section > a{
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    display: block;
+    padding: 13px;
+    width: 65%;
+    margin: auto;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 20px;
+}
+@media (min-width: 550px) {
+    div.section{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
+@media (min-width: 700px) {
+    div.section{
+        width: 60%;
+    }
+    div.section > a{
+        width: 60%;
+    }
+}
+@media (min-width: 850px) {
+    div.section > h1{
+        font-size: 35px;
+    }
+    div.section > p{
+        padding: 0 40px;
+        font-size: 20px;
+    }
+    div.section > a{
+        width: 45%;
+    }    
+}
+/** End of section **/
+
+/**  info **/
+div.info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+div.info_item{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 70px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+div.info_item > h3{
+    margin: 20px 0;
+}
+div.info_item > p{
+    font-size: 16px;
+    color: rgba(255, 255, 255,0.8);
+}
+@media (max-width: 830px) {
+    div.info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
+    div.info_item{
+        width: 100%;
+    }
+    div.info{
+        width: 80%;
+    }
+
+}
+
+/** section four **/
+div.productive{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+}
+
+div.p_one > img{
+    max-width: 100%;
+    height: auto;
+}
+img.arrow{
+    max-width: 100%;
+    height: auto;
+}
+div.p_two{
+    padding: 30px 0;
+}
+div.p_two > p:nth-child(2){
+    margin: 30px 0;
+}
+div.see{
+    margin: 20px 0;
+    display: flex;
+    
+}
+div.see > div{
+    border-bottom: 1px solid hsl(198, 60%, 50%);
+    padding-bottom: 5px;
+}
+div.see > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+@media (min-width:800px){
+    div.productive{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    div.p_two > h3{
+        font-size: 30px;
+    }
+    
+    div.productive > div{
+        width: 40%;
+    }
+    div.p_one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.p_two > p{
+        color: rgba(255, 255, 255,0.8);
+    }
+}
+
+
+/** testimonials **/
+
+div.testimonials{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 40px auto 60% auto;
+    color: rgba(255, 255, 255,0.8);
+
+}
+div.testchild{
+    padding: 40px 30px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+div.testchild > p{
+    font-size: 14px;
+    text-align: left;
+}
+div.testchild:nth-child(3){
+    margin: 30px 0;
+}
+
+div.author{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    align-content: center;
+}
+div.author img{
+    width: 35px;
+    border-radius: 50%;
+}
+div.author p{
+    font-size: 13px
+}
+div.author div:nth-child(2){
+    margin-left: 10px;
+}
+div.author p:nth-child(1){
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+img.quotes{
+    width: 24px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+@media (min-width: 800px){
+    div.testimonials{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    div.testchild{
+        width: 32%;
+    }
+    div.testchild:nth-child(3){
+        margin: 0;
+    }
+    div.testimonials{
+        margin: 40px auto 35% auto;
+    }
+}
+
+/** Footer **/
+footer{
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    padding: 45% 5%;
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+}
+@media(min-width: 800px)
+{
+    footer{
+        padding: 27% 5%;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+div.newsletter{
+    background-color: hsl(217, 28%, 15%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5%;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+div.newsletter form > input{
+    width: 100%;
+    border-radius: 20px;
+    height: 48px;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+}
+div.newsletter form > input:nth-child(1){
+    text-align: center;
+}
+div.newsletter form > input:nth-child(2)
+{
+    background-color: hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+    
+}
+div.newsletter > h3{
+}
+div.newsletter > p:nth-child(2){
+    font-size: 14px;
+    margin: 20px 0;
+}
+@media (min-width: 1000px){
+    div.testimonials{
+        margin: 40px auto 20% auto;
+    }
+    form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.newsletter form > input[type="email"]
+    {
+        width: 68%;
+    }
+    div.newsletter form > input[type="submit"]{
+        width: 30%;
+    }
+    footer{
+        padding: 25% 5%;
+    }
+}
+div.contact{
+    margin-top: 20px;
+    border: 1px solid red;
+}
+div.location{
+    display: flex;
+    justify-content: space-between;
+}
+div.location > div:nth-child(1) img{
+    width: 100%;
+    height: auto;
+}
+div.location > div:nth-child(2){
+    width: 90%;
+    line-height: 30px;
+}
+div.contact_2{
+    margin-top: 20px;
+}
+div.contact_2 > div{
+    margin: 10px 0;
+}
+div.contact_3{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+div.contact_3 > a
+{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+div.links{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+div.links > a{
+    padding: 10px;
+    border: 1px solid hsl(198, 60%, 50%);
+    border-radius:50%;
+    color: hsl(0, 0%, 100%);
+}
+div.links > a:nth-child(1){
+    padding: 10px 15px;
+}
+div.links > a:nth-child(3){
+    padding: 10px 13px;
+}
+

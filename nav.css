@@ -2,7 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 4%;
+    padding: 5% 4%;
     font-family: 'Raleway', sans-serif;
 }
 div.logo{
@@ -27,6 +27,9 @@ div.logo{
 }
 
 @media(min-width: 800px){
+    nav{
+        padding: 3% 4%;
+    }
     .nav-links{
         grid-gap: 30px;
     }
