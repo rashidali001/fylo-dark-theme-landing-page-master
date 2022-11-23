@@ -259,10 +259,11 @@ img.quotes{
 footer{
     background-color: hsl(216, 53%, 9%);
     position: relative;
-    padding: 45% 5%;
+    padding: 45% 5% 7% 5%;
     display: flex;
     flex-direction: column;
     color: hsl(0, 0%, 100%);
+    border: 1px solid red;
 }
 @media(min-width: 800px)
 {
@@ -304,8 +305,6 @@ div.newsletter form > input:nth-child(2)
     background-color: hsl(198, 60%, 50%);
     color: hsl(0, 0%, 100%);
     
-}
-div.newsletter > h3{
 }
 div.newsletter > p:nth-child(2){
     font-size: 14px;
@@ -369,11 +368,12 @@ div.links{
     grid-template-columns: auto auto auto;
     justify-content: center;
     grid-gap: 10px;
+    border: 1px solid red;
 }
 
 div.links > a{
     padding: 10px;
-    border: 1px solid hsl(198, 60%, 50%);
+    border: 1px solid hsl(0, 0%, 100%);
     border-radius:50%;
     color: hsl(0, 0%, 100%);
 }
