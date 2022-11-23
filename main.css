@@ -52,6 +52,9 @@ div.section > a{
     background-color: hsl(198, 60%, 50%);
     border-radius: 20px;
 }
+div.section > a:hover{
+    background-color: hsl(198, 61%, 40%);
+}
 @media (min-width: 550px) {
     div.section{
         width: 80%;
@@ -316,6 +319,10 @@ div.newsletter form > input:nth-child(2)
     color: hsl(0, 0%, 100%);
     
 }
+div.newsletter form > input:nth-child(2):hover{
+    background-color:  hsl(198, 61%, 40%);
+    cursor: pointer;
+}
 div.newsletter > p:nth-child(2){
     font-size: 14px;
     margin: 20px 0;
@@ -328,7 +335,7 @@ div.newsletter > p:nth-child(2){
         flex-direction: row;
         justify-content: space-between;
     }
-    div.newsletter form > input[type="email"]
+    div.newsletter form > input[type="text"]
     {
         width: 68%;
     }
@@ -403,6 +410,14 @@ div.links > a:nth-child(3){
         align-items: flex-start;
         justify-content: space-between;
     }
+    div.contact_2 > div.location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    div.contact_2  div.location > div:nth-child(1){
+        margin-right: 10px;
+    }
     div.f_logo{
         position: absolute;
         top: 42%;
@@ -425,19 +440,19 @@ div.links > a:nth-child(3){
     }
 }
 
-div#error{
+div.error{
     color: hsl(0, 100%, 63%);
     text-align: left;
     transition: 0.5s;
     display: none;
 }
-div#empty{
+div.empty{
     color: hsl(0, 100%, 63%);
     text-align: left;
     transition: 0.5s;
     display: none;
 }
-div#success{
+div.success{
     color: #498360;
     text-align: left;
     transition: 0.5s;
